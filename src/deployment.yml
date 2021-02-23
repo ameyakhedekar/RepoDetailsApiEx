@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: repodetailsapi
+spec:
+  selector:
+    matchLabels:
+      app: repodetailsapi-pod
+  template:
+    metadata:
+      labels:
+        app: repodetailsapi-pod
+    spec:
+      containers:
+      - name: repodetailsapi-container
+        image: repodetailsapi:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80

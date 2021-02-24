@@ -31,6 +31,6 @@ It has a Health endpoint which returns the repo details of the curent project
   
 
 ## Limitations and Improvements
-* Build CI/CD pipeline in a tool. The instructions are based in the _deploy.bat_ file
+* Build CI/CD pipeline in a tool. The instructions are based in the _deploy.bat_ file. Tagging for release is manual, but would be ideally be done by the CI CD pipeline.
 * Write unittests for the projects/Extend it with TDD development.
 * There is rate limiting with the public endpoint with github(https://api.github.com). Would need to add authentication to extend that.

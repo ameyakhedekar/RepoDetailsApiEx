@@ -12,7 +12,7 @@ It has a Health endpoint which returns the repo details of the curent project
 1. Go into the project folder.
 2. Run deployment\deploy.bat
 3. You should be able to access the swagger: http://localhost:8091/swagger/index.html
-4. Check endpoint http://localhost:8091/Health
+4. Check endpoint http://localhost:8080/Health
 
 
 ## Artifacts/Folders

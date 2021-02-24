@@ -30,8 +30,8 @@ namespace RepoDetailsApi.Controllers
         public IActionResult GetRepoDetails(){
             var response = _gitHubSourceHandler.GetRepoDetails(new GitHubPublicRepoDetailsQuery()
             {
-                ProjectName = "vue",
-                UserName = "vuejs"
+                ProjectName = "RepoDetailsApiEx",
+                UserName = "ameyakhedekar"
             });
 
             return Ok(response);

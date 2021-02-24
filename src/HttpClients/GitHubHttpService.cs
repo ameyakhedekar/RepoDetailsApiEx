@@ -10,6 +10,10 @@ namespace RepoDetailsApi.HttpClients {
 
         dynamic GetLatestTag(string userName, string projectName);
     }
+
+    /// <summary>
+    /// Http service wrapper for Api calls to Github
+    /// </summary>
     public class GitHubHttpService : IGitHubHttpService
     {
         private readonly HttpClient _httpClient;

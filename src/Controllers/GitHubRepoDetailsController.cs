@@ -9,10 +9,14 @@ using RepoDetailsApi.Models;
 
 namespace RepoDetailsApi.Controllers
 {
+
+
+    /// <summary>
+    /// Controller class to respond to API
+    /// </summary>
     [ApiController]
     [Route("[controller]")]
     [Route("Health")]
-
     public class GitHubRepoDetailsController : ControllerBase
     {
 
@@ -26,6 +30,10 @@ namespace RepoDetailsApi.Controllers
             _gitHubSourceHandler = gitHubSourceHandler;
         }
 
+        /// <summary>
+        /// Endpoint Handler to return the details 
+        /// </summary>
+        /// <returns> Json with repo details </returns>
         [HttpGet]        
         public IActionResult GetRepoDetails(){
             var response = _gitHubSourceHandler.GetRepoDetails(new GitHubPublicRepoDetailsQuery()

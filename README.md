@@ -1,6 +1,6 @@
 ## Introduction
 RepoDetailsApi is designed to return information of public repository.
-It has a Health endpoint which returns the repo details of the curent project
+It has a /Health endpoint which returns the repo details of the curent project, based on the specification.
 
 
 ## Pre requisites/ dependencies to run the project:

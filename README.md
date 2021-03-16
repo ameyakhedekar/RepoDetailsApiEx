@@ -21,7 +21,7 @@ It has a /Health endpoint which returns the repo details of the curent project, 
 
 
 ### deployment/CI CD pipleline
-* This web api would ideally be deployed on a Kubernetes hosting environment on the cloud such as ECS. 
+* This web api would ideally be deployed on a Kubernetes hosting environment on the cloud such as EKS. 
 * This folder contains a batch file(_deploy.bat_) which can be run to deploy the web api locally. 
 * The _deploy.bat_ has some key steps which we would execute on a CI/CD Server.
 
